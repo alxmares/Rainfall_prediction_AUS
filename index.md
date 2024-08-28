@@ -2,10 +2,6 @@
 layout: default
 ---
 
-# 🌦️ Weather analysis and Rainfall Prediction
-
-This project analyzes weather data sourced from the Australian Government's Bureau of Meteorology. The latest data can be gathered from [here](http://www.bom.gov.au/climate/dwo/).
-
 ## 🛠️ Tools and Technologies Used
 
 ![Python](https://img.shields.io/badge/Python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white)
@@ -50,7 +46,7 @@ A pairplot was created using Seaborn to visualize the relationships between key 
 
 ![Pairplot](assets/01.png)
 
-### 2. **Data Preprocessing**
+## **Data Preprocessing**
 
 The data was preprocessed to prepare it for machine learning models. Key steps included:
 
@@ -66,9 +62,9 @@ The data was preprocessed to prepare it for machine learning models. Key steps i
   df_sydney_processed = pd.get_dummies(data=df, columns=['RainToday', 'WindGustDir', 'WindDir9am', 'WindDir3pm'])
   ```
 
-### 3. 🔍 Machine Learning Models and Results
+## 🔍 Machine Learning Models and Results
 
-#### Regression Algorithms
+### Regression Algorithms
 Several regression algorithms were used to predict weather outcomes. Here are the results:
 
 | Metric | Linear Regression | Ridge Regression |	Lasso Regression |
@@ -78,14 +74,13 @@ Several regression algorithms were used to predict weather outcomes. Here are th
 | R2	| 0.427132 |	0.432530 |	0.433039 |
 
 
-#### Classification Algorithms 
+### Classification Algorithms 
 Various classification algorithms were tested to predict the likelihood of rain:
 
 - **Decision Tree Classifier**:
 Sample code for the Decision Tree model with hyperparameter tuning using Grid Search:
 
 ```python
-Copiar código
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import GridSearchCV
 
@@ -99,7 +94,7 @@ grid_search_tree = GridSearchCV(estimator=tree_model, param_grid=param_grid_tree
 grid_search_tree.fit(X_train, y_train)
 ```
 
-- **Confusion Matrix for SVM**:
+### Confusion Matrix for SVM:
 A confusion matrix was created to visualize the performance of the Support Vector Machine (SVM) model:
 
 ![Pairplot](assets/02.png)
@@ -111,5 +106,5 @@ A confusion matrix was created to visualize the performance of the Support Vecto
 | F1 Score	| 0.653968	| 0.600000	| 0.674772	| 0.664577 | 
 | Log Loss	| NaN	| NaN	| 0.380451	| NaN | 
 
-- **Comparison of Metrics**
+### Comparison of Metrics
 ![Pairplot](assets/03.png)
