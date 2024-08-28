@@ -1,0 +1,4 @@
+remote_theme: pages-themes/minimal@v0.2.0
+title: "Weather analysis and rainfall prediction" 
+description: "Weather analysis and rainfall prediction from the Australian Government's Bureau of Meteorology."
+logo: /assets/logo.jpeg
