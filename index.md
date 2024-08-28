@@ -99,6 +99,8 @@ A confusion matrix was created to visualize the performance of the Support Vecto
 
 ![Pairplot](assets/02.png)
 
+### Comparison of Metrics
+
 | Metric	| KNN	| Decision Tree	| Logistic Regression	| SVM |
 |---------|-----|---------------|---------------------|-----|
 | Accuracy	| 0.833588	| 0.792366	| 0.836641	| 0.836641| 
@@ -106,5 +108,5 @@ A confusion matrix was created to visualize the performance of the Support Vecto
 | F1 Score	| 0.653968	| 0.600000	| 0.674772	| 0.664577 | 
 | Log Loss	| NaN	| NaN	| 0.380451	| NaN | 
 
-### Comparison of Metrics
+
 ![Pairplot](assets/03.png)
