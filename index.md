@@ -110,3 +110,11 @@ A confusion matrix was created to visualize the performance of the Support Vecto
 
 
 ![Pairplot](assets/03.png)
+
+* * *
+
+## 🚀 **Explore More Projects!**
+
+### [📚 Check out all my projects on GitHub Pages](https://alxmares.github.io)
+
+* * *
